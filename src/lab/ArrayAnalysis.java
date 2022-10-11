@@ -1,6 +1,7 @@
 package lab;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
  * See the link for lab explanation
@@ -13,15 +14,15 @@ public class ArrayAnalysis {
 
 	// #1
 	public static int[][] createRandom(int row, int column, int min, int max) {
-		int[][] arr = new int[row][column];
+		int[][] arr = new int[row][column]; //creates the array
 
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
 
-				int scope = max - min;
+				int scope = max - min; //creates the scope 
 
-				int num = (int) (Math.random() * scope + min);
-				arr[i][j] = num;
+				int num = (int) (Math.random() * scope + min); //generates number between max and min
+				arr[i][j] = num; //populates the array with the numbers
 			}
 		}
 
@@ -154,17 +155,21 @@ public class ArrayAnalysis {
 	}
 
 	// #8
+	
+	
 	public static int[][] transposeRow(int[][] arr1, int dist) {
-
-		for (int[] row : arr1) {
-			for (int element : row) {
-				
-				
-			}
-			System.out.println();
-
-		}
-		return null;
+		
+		int[][] newArr  = new int[arr1.length][arr1[0].length];
+		
+		for  (int row = 0; row < arr1.length - 1; row++) {
+			
+			newArr[row+1] = arr1[row];
+			
+			}		
+		
+			newArr[0] = arr1[arr1.length - 1];
+		
+		return newArr;
 	}
 
 	// #9

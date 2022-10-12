@@ -161,9 +161,9 @@ public class ArrayAnalysis {
 		
 		int[][] newArr  = new int[arr1.length][arr1[0].length];  //creates the second array
 		
-		for  (int row = 0; row < arr1.length - 1; row++) {  
+		for  (int row = 0; row < arr1.length - 1; row +=  dist) {  
 			
-			newArr[row+dist] = arr1[row]; //moves the  row  down by dist
+			newArr[row+dist] = arr1[row]; //moves the  row  down by distance
 			
 			}		
 		

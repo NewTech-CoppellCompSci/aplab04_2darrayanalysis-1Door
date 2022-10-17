@@ -33,7 +33,7 @@ public class Runner {
 		analysis.diffArrays(arr1,arr2); //uses this for  the diff array method
 		
 		System.out.println("\nMoves array #1 down a row");
-		analysis.printArray(analysis.transposeRow(arr1, 0));
+		analysis.printArray(analysis.transposeRow(arr1, 1));
 		
 		System.out.println("\n----------3D Array----------"); 
 		

@@ -11,10 +11,14 @@ import java.util.Arrays;
  */
 
 public class ArrayAnalysis {
+	
+	
 
 	// #1
 	public static int[][] createRandom(int row, int column, int min, int max) {
 		int[][] arr = new int[row][column]; //creates the array
+		
+		
 
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
@@ -86,11 +90,12 @@ public class ArrayAnalysis {
 		int min = 240000000;
 		for (int[] row : arr) {
 			for (int element : row) { //loops through all elements
-
+				
 				if (element < min) { //if it is smaller  than current  num
 
 					min = element; //then make this the new smallest
-
+					
+					
 				}
 				
 
